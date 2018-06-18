@@ -2,6 +2,6 @@
 title: billboard
 ---
 
-# This is a demo page of the _SimpleLanding_ GatsbyJS starter.
+# Le guide ultime pour draguer sur le terrain et marquer des buts.
 
 ## It's an optimized, ready to use theme-starter. Just add your content.

@@ -9,15 +9,15 @@ module.exports = {
   siteLanguage: "fr",
   siteDescription: "SimpleLanding is a dead simple landing page GatsbyJs starter.",
   contactEmail: "hello@example.com",
-  ctaLinkUrl: "https://dev.greglobinski.com/gatsby-starter-simple-landing/",
-  ctaLinkLabel: "GatsbyJS starter",
+  ctaLinkUrl: "https://gum.co/NRwzD?wanted=true",
+  ctaLinkLabel: "Precommader le Guide",
   // manifest.json
-  manifestName: "SimpleLanding - Gatsby starter",
-  manifestShortName: "SimplLanding",
+  manifestName: "Le Guide du Buteur",
+  manifestShortName: "GuideButeur",
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.bg,
   manifestThemeColor: colors.bg,
   manifestDisplay: "standalone",
   // analytics
-  analyticsTrackingId: "UA-110088221-3"
+  analyticsTrackingId: "UA-xxxxxxxx-x"
 };

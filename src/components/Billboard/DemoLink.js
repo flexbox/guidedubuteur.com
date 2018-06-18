@@ -18,22 +18,21 @@ const styles = theme => ({
     color: "white",
     fontWeight: 300,
     fontFamily: "inherit",
-    height: "60px",
+    minHeight: "60px",
+    maxWidth: "400px",
     lineHeight: 1,
     textTransform: "none",
     padding: ".5em 2em",
-    "&:hover": {
-      background: Color(theme.billboard.colors.ctaLinkBackground)
-        .lighten(0.2)
-        .string()
-    }
-  },
-  label: {
     fontSize: "2em",
     "& svg": {
       width: "1.1em",
       height: "1.1em",
       verticalAlign: "middle"
+    },
+    "&:hover": {
+      background: Color(theme.billboard.colors.ctaLinkBackground)
+        .lighten(0.2)
+        .string()
     }
   }
 });
@@ -42,11 +41,12 @@ const DemoLink = props => {
   const { classes, onClick } = props;
   return (
     <div>
-      <Button onClick={onClick} classes={{ root: classes.root, label: classes.label }}>
-        {config.ctaLinkLabel} <ArrowForward />
-      </Button>
-      <a className="gumroad-button" href="https://gum.co/NRwzD?wanted=true" target="_blank">
-        PREORDER NOW
+      <a
+        className={(classes.root, classes.root)}
+        href="https://gum.co/NRwzD?wanted=true"
+        target="_blank"
+      >
+        Précommander <ArrowForward />
       </a>
     </div>
   );

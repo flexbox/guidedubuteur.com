@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "react-load-script";
 import Color from "color";
 import injectSheet from "react-jss";
 import PropTypes from "prop-types";
@@ -284,6 +285,18 @@ class Billboard extends React.Component {
     ).node.resolutions[`${srcType}${fileType}`];
   }
 
+  handleScriptCreate() {
+    this.setState({ scriptLoaded: false });
+  }
+
+  handleScriptError() {
+    this.setState({ scriptError: true });
+  }
+
+  handleScriptLoad() {
+    this.setState({ scriptLoaded: true });
+  }
+
   render() {
     const { classes } = this.props;
 
@@ -300,6 +313,12 @@ class Billboard extends React.Component {
             <SvgEl svg={LOGOS.MAIN} />
           </span>
           <header className={classes.header} dangerouslySetInnerHTML={{ __html: headings }} />
+          <Script
+            url="https://gumroad.com/js/gumroad.js"
+            onCreate={this.handleScriptCreate.bind(this)}
+            onError={this.handleScriptError.bind(this)}
+            onLoad={this.handleScriptLoad.bind(this)}
+          />
           <div className={classes.actionForDesktop}>
             <DemoLink onClick={handleMouseClick} />
           </div>

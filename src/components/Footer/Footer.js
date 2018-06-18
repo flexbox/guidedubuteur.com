@@ -23,12 +23,6 @@ const styles = theme => ({
     "& a": {
       borderBottom: `1px solid ${theme.footer.colors.link}`,
       color: theme.footer.colors.link,
-      textShadow: `1px 1px ${theme.main.colors.background},
-        -1px 1px ${theme.main.colors.background},
-        -1px -1px ${theme.main.colors.background},
-        -1px 1px ${theme.main.colors.background},
-        -1px 0 ${theme.main.colors.background},
-        1px 0 ${theme.main.colors.background}`,
       "&:hover": {
         color: theme.footer.colors.linkHover,
         borderBottom: `1px solid ${theme.footer.colors.linkHover}`
