@@ -3,5 +3,5 @@ module.exports = {
   accent: "#ff4f81",
   bright: "#ffffff",
   dark: "#050f2c",
-  gray: "#caccd1"
+  gray: "#b1bdc0"
 };

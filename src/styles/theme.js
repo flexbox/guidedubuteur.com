@@ -23,12 +23,12 @@ const theme = createMuiTheme({
       text: colors.dark,
       textAccent: colors.accent,
       ctaLinkBackground: colors.accent,
-      logo: colors.bright
+      logo: colors.dark
     },
     sizes: {
-      logoWidth: "200px",
-      logoWidthForM: "300px",
-      logoWidthForL: "50%",
+      logoWidth: "100px",
+      logoWidthForM: "100px",
+      logoWidthForL: "100px",
       h1Font: 1.8,
       h2Font: 1.2,
       fontIncraseForM: 1.2,

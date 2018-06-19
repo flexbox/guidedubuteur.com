@@ -45,6 +45,7 @@ const DemoLink = props => {
         className={(classes.root, classes.root)}
         href="https://gum.co/NRwzD?wanted=true"
         target="_blank"
+        data-gumroad-single-product="true"
       >
         Précommander <ArrowForward />
       </a>
